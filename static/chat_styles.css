@@ -1,0 +1,23 @@
+/* Custom Styles */
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+.chat-history {
+  max-height: calc(100vh - 20rem);
+}
+
+.chat-form {
+  position: sticky;
+  bottom: 1rem;
+}
+
+.chat-input {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+main {
+  height: 90vh;
+}
