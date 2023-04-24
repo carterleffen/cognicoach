@@ -1,0 +1,40 @@
+/* Custom Styles */
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    background-color: #4C51BF;
+}
+
+h1, h2, h3 {
+    color: #2C5282;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+.section-title {
+    color: #2C5282;
+}
+
+.bg-brand {
+    background-color: #4C51BF;
+}
+
+.text-brand {
+    color: #4C51BF;
+}
+
+.hover\:bg-brand:hover {
+    background-color: #4C51BF;
+}
+
+.hover\:text-brand:hover {
+    color: #4C51BF;
+}
+
+main {
+  height: 90vh;
+}
