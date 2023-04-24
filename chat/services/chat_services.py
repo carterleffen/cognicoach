@@ -1,4 +1,7 @@
+import os
+
 import uuid
+import requests
 from chat.models.chat import Chat
 
 from langchain.chat_models import ChatOpenAI
@@ -30,10 +33,24 @@ def process_user_input(chat: Chat, user_input: str):
   return _continue_chat(chat, user_input)
 
 
+def history_exists(chat: Chat):
+  return chat.memory.load_memory_variables({"history"})['history'] != ''
+
+
+def get_history(chat: Chat):
+  """Process user input and return chatbot response."""
+  # call llm with user input and save history
+  return chat.memory.load_memory_variables({"history"})
+
+
 def _get_initial_prompt():
   # load initial prompt
+  print(os.getcwd())
   with open('ideation_prompt.txt', 'r') as file:
     initialprompt = file.read().replace('\n', '')
+  # initialprompt = requests.get(
+  #   "https://raw.githubusercontent.com/carterleffen/chatgpt-prompts/main/ideation.prompt"
+  # ).text
   # define LLM
   return initialprompt
 

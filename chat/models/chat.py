@@ -5,3 +5,6 @@ class Chat:
     self.chat_id = chat_id
     self.memory = memory
     self.chain = chain
+
+  def has_memory(self):
+    return self.memory is not None

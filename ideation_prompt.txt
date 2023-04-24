@@ -86,4 +86,4 @@ Before we begin, repeat this "Hi! I’m here to guide you with a prompt-based in
 
 Repeat this verbatim, “Tell me about an idea you have, like: "Beach-themed birthday party" or "I want to build a web service that uses machine learning with a freemium model."
 
-Ask me what my idea is.
+My idea is:

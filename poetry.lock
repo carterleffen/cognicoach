@@ -153,6 +153,18 @@ async = ["asgiref (>=3.2)"]
 dotenv = ["python-dotenv"]
 
 [[package]]
+name = "flask-cors"
+version = "3.0.10"
+description = "A Flask extension adding a decorator for CORS support"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+Flask = ">=0.9"
+Six = "*"
+
+[[package]]
 name = "flask-httpauth"
 version = "4.7.0"
 description = "HTTP authentication for Flask routes"
@@ -665,7 +677,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.10.0,<3.11"
-content-hash = "c7df27e36d53c7315829a12bb8fb1eaf6f584fe0d6d28f56524a73db8d01c071"
+content-hash = "9afd48ff5684c0243c5baaff10c806dff11ff634580fd8e0cb2fb528e75acbab"
 
 [metadata.files]
 aiohttp = []
@@ -681,6 +693,7 @@ colorama = []
 debugpy = []
 faiss-cpu = []
 flask = []
+flask-cors = []
 flask-httpauth = []
 flask-migrate = []
 flask-restful = []

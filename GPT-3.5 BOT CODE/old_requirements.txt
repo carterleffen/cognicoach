@@ -1,7 +1,0 @@
-# install faiss with conda=  conda install -c pytorch faiss-cpu
-termcolor 
-openai
-langchain
-Jinja2
-tiktoken
-streamlit
